@@ -1,4 +1,5 @@
 body {
+    background-image: url(bg.gif);
     background-color: black;
 }
 
@@ -20,6 +21,7 @@ h1  {
 }
 
 a {
+    font-weight: 600;
     color: rgb(101, 201, 255);
     background-color: transparent;
     text-decoration: underline;
@@ -33,4 +35,26 @@ a:hover {
     color: lightblue;
     transform: translateY(-3px);
     transition: .3s ease all;
+}
+
+.rightside{
+    margin: 0px 30px;
+    display: flex;
+    transform: translateY(200px);
+    top: 50%;
+    bottom: 50%;
+}
+
+audio{
+    display: flex;
+}
+
+p {
+    font-weight: 600;
+    color: rgb(101, 201, 255);
+    background-color: transparent;
+    font-size: 20px;
+    margin: 10px 15px 10px 30px;
+    transition: .3s ease all;
+    display: flex;
 }
