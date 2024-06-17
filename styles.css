@@ -1,3 +1,36 @@
-h1 {
-    color: aquamarine
+body {
+    background-color: black;
+}
+
+h1  {
+    color: aquamarine;
+}
+
+@keyframes colorshift {
+    from {color: rgb(51, 184, 255);}
+    to {color: lightblue;}
+}
+
+.wormed {
+    margin: 20px 30px;
+    animation-name: colorshift;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+a {
+    color: rgb(101, 201, 255);
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 20px;
+    margin: 10px 15px 10px 30px;
+    transition: .3s ease all;
+    display: inline-block;
+}
+
+a:hover {
+    color: lightblue;
+    transform: translateY(-3px);
+    transition: .3s ease all;
 }
