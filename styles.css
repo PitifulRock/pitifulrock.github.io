@@ -5,7 +5,24 @@ body {
 }
 
 h1  {
+    font-size: 40px;
     color: aquamarine;
+}
+
+.black{
+    padding: 2px 0px;
+    width: 900px;
+    border: 0px outset rgb(152, 131, 255);
+    background-color: black;
+    text-align: left;
+    margin: 10px 30px;
+}
+
+.grey{
+    width: 900px;
+    border: 0px outset rgb(152, 131, 255);
+    background-color: rgba(0, 0, 0, 0.48);
+    margin: 10px 30px;
 }
 
 @keyframes colorshift {
@@ -14,16 +31,26 @@ h1  {
 }
 
 .wormed {
-    margin: 20px 30px;
+    margin: 10px 30px;
     animation-name: colorshift;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.wormed2 {
+    margin: 22px 30px 30px 30px;
+    animation-name: colorshift;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
 
 a {
     font-weight: 600;
-    color: rgb(101, 201, 255);
+    color: rgb(152, 131, 255);
     background-color: transparent;
     text-decoration: underline;
     font-size: 20px;
@@ -33,7 +60,7 @@ a {
 }
 
 a:hover {
-    color: lightblue;
+    color: rgb(194, 182, 255);
     transform: translateY(-3px);
     transition: .3s ease all;
 }
@@ -83,4 +110,16 @@ p {
     font-size: 18px;
     letter-spacing: 10px;
     margin: -24px 0px 10px 30px;
+}
+
+.sub{
+    font-size: 15px;
+    color: rgb(87, 173, 219);
+    margin-top: -10px;
+    margin-bottom: 5px;
+    animation-name: colorshift;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
