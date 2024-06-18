@@ -1,6 +1,7 @@
 body {
     background-image: url(bg.gif);
     background-color: black;
+    overflow-x: hidden;
 }
 
 h1  {
@@ -57,4 +58,29 @@ p {
     margin: 10px 15px 10px 30px;
     transition: .3s ease all;
     display: flex;
+}
+
+@keyframes moveright {
+    from {transform: translateX(0px);}
+    to {transform: translateX(175px);}
+}
+
+.moveside{
+    animation-name: moveright;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.top{
+    font-size: 18px;
+    letter-spacing: 10px;
+    margin: 0px 0px -20px 30px;
+}
+
+.bottom{
+    font-size: 18px;
+    letter-spacing: 10px;
+    margin: -24px 0px 10px 30px;
 }
